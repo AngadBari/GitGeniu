@@ -28,6 +28,7 @@ const Searchbox = () => {
   };
 
   return (
+
     <div className="flex justify-center items-center h-screen gap-20 flex-col">
       
      
@@ -59,8 +60,9 @@ const Searchbox = () => {
         
         {error && (
           <p className="font-semibold font-mono md:text-2xl mt-3">{error}</p>
-        )}
+        )}  
       </div>
+  <footer className=' absolute mt-20 font-mono  font-bold text-xs lg:text-xl md:text-xl top-150 md:top-170 lg:top-165 lg:left-140'>Made with ❤️ Angad Bari <a className=' underline font-light text-[15px] tracking-tight' href="https://git-genius.vercel.app/">view old one </a><i className="ri-arrow-right-up-long-fill text-[15px]"></i></footer>
 
     
       {userData && (
@@ -78,8 +80,9 @@ const Searchbox = () => {
           </p>
           <p className="mt-1  font-semibold font-mono">Repos: {userData.public_repos}</p>
         </div>
-      )}
+      )}      
     </div>
+   
   );
 };
 
